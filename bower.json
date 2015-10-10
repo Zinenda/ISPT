@@ -1,0 +1,28 @@
+{
+  "name": "ISPT E-libraby",
+  "version": "1.0.0",
+  "authors": [
+    "Ivo Zinenda and Juliao Cumbe"
+  ],
+  "description": "Biblioteca online do Instituto Superior Politecnico",
+  "main": "README.md",
+  "moduleType": [],
+  "keywords": [
+    "Portifolio",
+    "Cursos",
+    "Video-Aulas",
+    "Testes",
+    "exames",
+    "exercicios"
+  ],
+  "license": "MIT",
+  "homepage": "github.com/Zinenda/ISPT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
