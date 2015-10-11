@@ -1,0 +1,25 @@
+/*
+* ISPT e-library 2015
+* Desenvolvido por Ivo Zinenda e Juliao Cumbe
+*/
+html,
+body {
+	width: 100%;
+	font-family: 'Roboto' sans-serif;
+}
+
+footer {
+	.page-footer {
+		color: #f5f5f5;
+	}
+}
+.redes-socias {
+	li {
+		display: inline;
+	}
+}
+//Importações
+@import "componentes/_variaveis";
+@import "componentes/_estilo";
+@import "materialize";
+

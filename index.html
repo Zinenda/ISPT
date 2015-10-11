@@ -4,28 +4,125 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta http-equiv="content-language" content="pt">
-        <meta content="description" content="descriçao do site">
-        <meta name="keywords" content="palavras chaves">
-        <meta name="theme-color" content="cor em hexadecimal na area de navegacao do chrome mobile">
+        <meta content="description" content="Biblioteca online do Instituto Superior Politecnico">
+        <meta name="keywords" content="Portifolio, Cursos, Video-Aulas, Testes, exames, exercicios">
+        <meta name="theme-color" content="#656565">
         
-        <title>Modelo de website</title>
+        <title>ISPT E-Library - A Biblioteca Online Do ISPT</title>
         
         <!-- INFORMAÇÕES DO AUTOR -->
         <meta name="author" content="Ivo Zinenda">
         <meta name="reply-to" content="izinenda@gmail.com">
         <link rel="me" href="http://plus.google.com/+IvoZinenda">
+
+        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
+        <!-- folhas de estilo e fontes -->
+        <link rel="stylesheet" href="css/ispt.css">
+        <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
+        <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     </head>
     
     <body>
-        <!-- barra de navegacao -->
-        <nav>
-            
-        </nav>
-        
+
         <!-- o cabecalho da pagina -->
         <header>
             
         </header>
+        <!-- barra de navegacao -->
+        <nav>
+            <a href="index.html" class="brand-logo center">ISPT e-Library</a>
+            <ul id="nav-mobile" class="right">
+                <li>
+                    <a href="#sobre" title="Sobre a Plataforma" class="waves-effect waves-light green modal-trigger">Sobre</a>
+
+                    <!-- MODAL -->
+                    <div id="sobre" class="modal">
+                        <div class="modal-content">
+                            <h4>Sobre ISPT e-Library</h4>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            </p>
+                        </div><!-- .modal-content -->
+                        <div class="modal-footer">
+                            <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat"><i class="material-icons">close</i></a>
+                        </div><!-- .modal-footer -->
+                    </div><!-- .modal -->
+                </li>
+            </ul>
+
+            <ul id="slide-out" class="side-nav fixed">
+                <li>
+                    <a href="index.html"><img src="img/logo6.png"></a>
+                </li>
+                <li class="search">
+                    <form class="search-wrapper card focused">
+                        <div class="input-field">
+                            <input id="search" type="search" required>
+                                <label for="search"><i class="material-icons">search</i></label>
+                                <i class="material-icons">close</i>
+                        </div>
+                    </form>
+                </li>
+                
+                <li class="no-padding">
+                    <ul class="collapsible collapssible-accordion">
+                        <li>
+                            <a class="collapsible-header">Cursos <i class="fa fa-caret-square-o-down"></i></a>
+                            <div class="collapsible-body">
+                                <ul>
+                                    <li>
+                                        <a href="#">Contabilidade e Administração Pública</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Contabilidade e Auditoria</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Engenharia Informática</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Engenharia de Minas</a>
+                                    </li>
+                                </ul>
+                            </div><!-- collapsible-body -->
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="no-padding">
+                    <ul class="collapsible collapsible-accordion">
+                        <li>
+                            <a class="collapsible-header">Portfolio <i class="fa fa-caret-square-o-down"></i></a>
+                            <div class="collapsible-body">
+                                <ul>
+                                    <li>
+                                        <a href="#">Livros PDF</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Livros emob</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Citações</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Testes Corrigidos</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Exercícios Resolvidos</a>
+                                    </li>
+                                </ul>
+                            </div><!-- collapsible-body -->
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <a href="#" data-activates="slide-out" class="button-collapse show-on-large"><i class="material-icons">menu</i></a>
+        </nav>
         
         <!-- as secoes -->
         <section>
@@ -39,10 +136,139 @@
         
         
         <!-- o rodape da pagina -->
-        <footer>
-            
+        <footer class="page-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col s12 l6">
+                        <h5>Fale Conosco <i class="fa fa-commenting-o"></i></h5>
+                        <address>
+                            <p>Bairro Matundo, Cidadela Académica</p>
+                            <p>Estrada Nacional N7, Km 1</p>
+                        </address>
+                        <ul class="redes-socias">
+                            <li>
+                                <a href="http://fb.com/zinenda.jerk" target="_blank" class="btn tooltipped btn-floating waves-effect waves-light blue darken-4" data-position="top" data-delay="50" data-tooltip="Facebook"><i class="fa fa-facebook"></i></a>
+                            </li>
+                            <li>
+                                <a href="http://twitter.com/Imaz_3g" target="_blank" class="btn tooltipped btn-floating waves-effect waves-light blue accent-3" data-position="top" data-delay="50" data-tooltip="Twitter"><i class="fa fa-twitter"></i></a>
+                            </li>
+                            <li>
+                                <a href="http://linkedin.com/in/zinendajerk" target="_blank" class="btn tooltipped btn-floating waves-effect waves-light blue accent-2" data-position="top" data-delay="50" data-tooltip="LinkedIn"><i class="fa fa-linkedin"></i></a>
+                            </li>
+                            <li>
+                                <a href="http://plus.google.com/+IvoZinenda" target="_blank" class="btn tooltipped btn-floating waves-effect waves-light red" data-position="top" data-delay="50" data-tooltip="Google Plus"><i class="fa fa-google-plus"></i></a>
+                            </li>
+                            <li>
+                                <a href="http://github.com/Zinenda" target="_blank" class="btn tooltipped btn-floating waves-effect waves-light indigo lighten-4" data-position="top" data-delay="50" data-tooltip="GitHub"><i class="fa fa-github"></i></a>
+                            </li>
+                            <li>
+                                <a href="mailto:izinenda@outlook.com" class="btn tooltipped btn-floating waves-effect waves-light" data-position="top" data-delay="50" data-tooltip="Email"><i class="material-icons">email</i></a>
+                            </li>
+                        </ul>
+                    </div><!-- col -->
+
+                    <div class="col s12 l4">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                    </div>
+                </div><!-- .row -->
+            </div><!-- .container -->
+
+            <div class="footer-copyright">
+                <div class="container">
+                    &copy;2015 INSTITUTO SUPERIOR POLITÉCNICO DE TETE
+                    <a href="#maningtech" class="grey-text text-lighten-4 right btn tooltipped green modal-trigger" data-position="left" data-delay="50" data-tooltip="ManingTech">Desenvolvido por: Maningtech</a>
+
+                    <!-- modal -->
+                    <div id="maningtech" class="modal bottom-sheet">
+                        <div class="container">
+                            <div class="modal-header light-green darken-4 center">ManingTech</div>
+                            <div class="modal-content">
+                                <div class="row card">
+                                    <div class="card-image">
+                                        <div class="col s12 m4">
+                                            <img src="logo.png" alt="Logo da ManingTech" class="circle">
+                                        </div><!-- col m4-->
+                                        <div class="col s12 m6">
+                                            <div class="card-content">
+                                                <p class="grey-text">Somos uma equipe de estudantes interessados no desenvolvimento web.</p>
+                                                <p class="grey-text">Somos qualificados no desenvolvimento front-end e no uso dos frameworks mais conhecidos no mundo web.</p>
+                                                <p class="grey-text">Seja estudante ou empregador, e tem interesse em desenvolver ou ter uma pagina web propria, não hesite em contactar-nos <i class="material-icons">telephone</i>: +258 848790215 
+                                                </p>
+                                                <ul class="redes-socias">
+                                                    <li>
+                                                        <a href="http://fb.com/zinenda.jerk" target="_blank" class="btn tooltipped btn-floating waves-effect waves-light blue darken-4" data-position="top" data-delay="50" data-tooltip="Facebook"><i class="fa fa-facebook"></i></a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="http://twitter.com/Imaz_3g" target="_blank" class="btn tooltipped btn-floating waves-effect waves-light blue accent-3" data-position="top" data-delay="50" data-tooltip="Twitter"><i class="fa fa-twitter"></i></a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="http://linkedin.com/in/zinendajerk" target="_blank" class="btn tooltipped btn-floating waves-effect waves-light blue accent-2" data-position="top" data-delay="50" data-tooltip="LinkedIn"><i class="fa fa-linkedin"></i></a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="http://plus.google.com/+IvoZinenda" target="_blank" class="btn tooltipped btn-floating waves-effect waves-light red" data-position="top" data-delay="50" data-tooltip="Google Plus"><i class="fa fa-google-plus"></i></a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="http://github.com/Zinenda" target="_blank" class="btn tooltipped btn-floating waves-effect waves-light indigo lighten-4" data-position="top" data-delay="50" data-tooltip="GitHub"><i class="fa fa-github"></i></a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="mailto:izinenda@outlook.com" class="btn tooltipped btn-floating waves-effect waves-light" data-position="top" data-delay="50" data-tooltip="Email"><i class="material-icons">email</i></a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div><!-- col -->
+                                    </div><!-- .card-image -->
+                                </div><!-- .card -->
+                            </div><!-- modal-content -->
+                        </div><!-- .container -->
+                    </div><!-- modal -->
+                </div>
+            </div><!-- copyright -->
         </footer>
 <!-- scripts para funcionamento interativo client side -->
-<script src=""></script>
-<script src=""></script>
-<script src=""></script>
+<script src="js/jquery.min.js"></script>
+<script src="js/materialize.min.js"></script>
+<!-- inicializacoes de plugins de jquery -->
+
+<!-- side nav -->
+<script>
+    // Initialize collapse button
+  $('.button-collapse').sideNav();
+  // Initialize collapsible (uncomment the line below if you use the dropdown variation)
+  $('.collapsible').collapsible();
+</script>
+<script>
+$('.button-collapse').sideNav({
+    menuWidth: 350, // Default is 240
+    edge: 'left', // Choose the horizontal origin
+    closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
+    }
+  );
+</script>
+<script>
+// Show sideNav
+$('.button-collapse').sideNav('show');
+// Hide sideNav
+$('.button-collapse').sideNav('hide');
+</script>
+
+<!-- modal -->
+<script>
+$(document).ready(function(){
+// the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
+$('.modal-trigger').leanModal();
+});
+</script>
+
+<!-- tooltip -->
+<script>
+$(document).ready(function(){
+    $('.tooltipped').tooltip({delay: 50});
+  });
+</script>
