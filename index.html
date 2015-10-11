@@ -38,8 +38,9 @@
 
                     <!-- MODAL -->
                     <div id="sobre" class="modal">
-                        <div class="modal-content">
-                            <h4>Sobre ISPT e-Library</h4>
+                        <div class="container">
+                            <div class="modal-header"><h4>Sobre ISPT e-Library</h4></div><hr>
+                            <div class="modal-content">
                             <p>
                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                                 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -52,6 +53,7 @@
                         <div class="modal-footer">
                             <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat"><i class="material-icons">close</i></a>
                         </div><!-- .modal-footer -->
+                        </div>
                     </div><!-- .modal -->
                 </li>
             </ul>
@@ -239,23 +241,18 @@
 <!-- side nav -->
 <script>
     // Initialize collapse button
-  $('.button-collapse').sideNav();
-  // Initialize collapsible (uncomment the line below if you use the dropdown variation)
-  $('.collapsible').collapsible();
-</script>
-<script>
+$(document).ready(function(){
+    $('.collapsible').collapsible({
+      accordion : true
+    });
+  });
 $('.button-collapse').sideNav({
-    menuWidth: 350, // Default is 240
-    edge: 'left', // Choose the horizontal origin
-    closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
+      menuWidth: 350, // Default is 240
+      edge: 'right', // Choose the horizontal origin
+      closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
     }
   );
-</script>
-<script>
-// Show sideNav
-$('.button-collapse').sideNav('show');
-// Hide sideNav
-$('.button-collapse').sideNav('hide');
+      
 </script>
 
 <!-- modal -->
